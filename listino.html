@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Listino Prezzi - Simply Estetica & Benessere</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        linear-gradient(
+          135deg,
+          #f7f3e9 0%,
+          #f7f3e9 35%,
+          #f5e7e2 35%,
+          #f5e7e2 70%,
+          #eef0e5 70%
+        );
+      color: #333;
+      min-height: 100vh;
+      padding: 14px;
+    }
+
+    .pagina {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      background: #ded5c8;
+      border-radius: 170px 170px 0 0;
+      padding: 42px 22px 28px;
+      min-height: calc(100vh - 28px);
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .logo-img {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 21px;
+      font-weight: normal;
+      margin: 12px 0 24px;
+    }
+
+    .categoria {
+      margin-bottom: 24px;
+    }
+
+    .categoria h2 {
+      margin: 0;
+      padding: 12px 15px;
+      background: #879475;
+      color: white;
+      font-size: 17px;
+      font-weight: normal;
+    }
+
+    .lista {
+      background: #eee8db;
+      border: 1px solid #aaa98e;
+      border-top: 0;
+    }
+
+    .trattamento {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      padding: 14px 15px;
+      border-bottom: 1px solid #cec7b8;
+      font-size: 15px;
+    }
+
+    .trattamento:last-child {
+      border-bottom: 0;
+    }
+
+    .nome {
+      line-height: 1.3;
+    }
+
+    .prezzo {
+      font-weight: bold;
+      white-space: nowrap;
+      color: #8d5b21;
+    }
+
+    .indietro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 52px;
+      margin-top: 8px;
+      background: #eee8db;
+      border: 1px solid #aaa98e;
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .indietro:active {
+      transform: scale(0.98);
+      background: #e7e0d2;
+    }
+
+    @media (max-width: 380px) {
+      .pagina {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .trattamento {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="pagina">
+
+    <header class="logo">
+      <img
+        src="logo-simply.png"
+        alt="Simply Estetica & Benessere di Sara La Scalea"
+        class="logo-img"
+      >
+    </header>
+
+    <h1>Listino Prezzi</h1>
+
+
+    <!-- CURA DELLA MANO -->
+    <section class="categoria">
+
+      <h2>Cura della Mano</h2>
+
+      <div class="lista">
+
+        <div class="trattamento">
+          <span class="nome">Manicure</span>
+          <span class="prezzo">€ 15,00</span>
+        </div>
+
+        <div class="trattamento">
+          <span class="nome">Manicure + Smalto</span>
+          <span class="prezzo">€ 20,00</span>
+        </div>
+
+        <div class="trattamento">
+          <span class="nome">Nail Art</span>
+          <span class="prezzo">€ 2,00</span>
+        </div>
+
+        <div class="trattamento">
+          <span class="nome">Refill</span>
+          <span class="prezzo">€ 40,00</span>
+        </div>
+
+        <div class="trattamento">
+          <span class="nome">Ricostruzione</span>
+          <span class="prezzo">€ 60,00</span>
+        </div>
+
+        <div class="trattamento">
+          <span class="nome">Semipermanente</span>
+          <span class="prezzo">€ 30,00</span>
+        </div>
+
+        <div class="trattamento">
+          <span class="nome">Semipermanente Rinforzante</span>
+          <span class="prezzo">€ 40,00</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CURA DEL PIEDE -->
+    <section class="categoria">
+
+      <h2>Cura del Piede</h2>
+
+      <div class="lista">
+
+        <div class="trattamento">
+          <span class="nome">Pedicure Avanzato</span>
+          <span class="prezzo">€ 30,00</span>
+        </div>
+
+        <div class="trattamento">
+          <span class="nome">Pedicure Avanzato + Semipermanente</span>
+          <span class="prezzo">€ 30,00</span>
+        </div>
+
+        <div class="trattamento">
+          <span class="nome">Pedicure Avanzato + Smalto</span>
+          <span class="prezzo">€ 30,00</span>
+        </div>
+
+        <div class="trattamento">
+          <span class="nome">Pedicure Semplice</span>
+          <span class="prezzo">€ 20,00</span>
+        </div>
+
+        <div class="trattamento">
+          <span class="nome">Pedicure Semplice + Semipermanente</span>
+          <span class="prezzo">€ 30,00</span>
+        </div>
+
+        <div class="trattamento">
+          <span class="nome">Pedicure Semplice + Smalto</span>
+          <span class="prezzo">€ 30,00</span>
+        </div>
+
+        <div class="trattamento">
+          <span class="nome">Ricostruzione Alluce</span>
+          <span class="prezzo">€ 5,00</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <a href="index.html" class="indietro">
+      ← Torna alla pagina principale
+    </a>
+
+  </main>
+
+</body>
+</html>

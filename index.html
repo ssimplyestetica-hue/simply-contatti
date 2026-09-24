@@ -11,9 +11,15 @@
       box-sizing: border-box;
     }
 
+    html,
     body {
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: Arial, Helvetica, sans-serif;
+
       background:
         linear-gradient(
           135deg,
@@ -23,53 +29,89 @@
           #f5e7e2 70%,
           #eef0e5 70%
         );
+
       color: #333;
-      min-height: 100vh;
-      padding: 10px 14px;
+
+      padding: 6px 14px 8px;
     }
 
-   .pagina {
-  width: 100%;
-  max-width: 420px;
-  margin: 0 auto;
-  background: #ded5c8;
-  border-radius: 190px 190px 0 0;
-  padding: 45px 22px 16px;
-}
+
+    /* CONTENITORE TORTORA */
+
+    .pagina {
+      width: 100%;
+      max-width: 420px;
+
+      margin: 0 auto;
+
+      background: #ded5c8;
+
+      border-radius: 190px 190px 0 0;
+
+      padding: 28px 20px 12px;
+
+      height: auto;
+      min-height: 0;
+    }
+
+
+    /* LOGO */
 
     .logo {
       text-align: center;
-      margin-bottom: 6px;
+      margin: 0 0 4px;
     }
 
     .logo-img {
       display: block;
+
       width: 100%;
-      max-width: 330px;
+      max-width: 300px;
+
       height: auto;
+
       margin: 0 auto;
     }
 
+
+    /* FRASE */
+
     .frase {
       text-align: center;
+
       font-size: 14px;
-      margin: 10px 0 12px;
+
+      margin: 6px 0 10px;
+
       color: #333;
     }
+
+
+    /* PULSANTI */
 
     .link,
     .link-disattivo {
       width: 100%;
-      height: 59px;
-      margin-bottom: 12px;
+
+      height: 52px;
+
+      margin-bottom: 8px;
+
       background: #eee8db;
+
       border: 1px solid #aaa98e;
+
       display: flex;
       align-items: center;
+
       text-decoration: none;
+
       color: #333;
+
       position: relative;
+
       font-size: 16px;
+
       transition: 0.15s ease;
     }
 
@@ -78,96 +120,180 @@
       background: #e7e0d2;
     }
 
+
+    /* ICONE */
+
     .icona {
-      width: 54px;
-      min-width: 54px;
+      width: 52px;
+      min-width: 52px;
+
       height: 100%;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       color: #879475;
     }
 
     .icona svg {
-      width: 29px;
-      height: 29px;
+      width: 27px;
+      height: 27px;
+
       fill: none;
+
       stroke: currentColor;
+
       stroke-width: 2;
+
       stroke-linecap: round;
       stroke-linejoin: round;
     }
 
+
+    /* TESTO PULSANTI */
+
     .testo {
       position: absolute;
+
       left: 0;
       right: 0;
+
       text-align: center;
+
       pointer-events: none;
     }
+
 
     .link-disattivo {
       cursor: default;
     }
+
+
+    /* FACEBOOK */
 
     .facebook svg {
       fill: #879475;
       stroke: none;
     }
 
+
+    /* NIENTE SPAZIO DOPO L'ULTIMO PULSANTE */
+
     .pagina > :last-child {
       margin-bottom: 0;
     }
 
+
+    /* TELEFONI PIÙ PICCOLI */
+
     @media (max-width: 380px) {
+
       .pagina {
-        padding-left: 18px;
-        padding-right: 18px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .logo-img {
+        max-width: 280px;
+      }
+
+      .link,
+      .link-disattivo {
+        height: 50px;
       }
     }
+
+
+    /* TELEFONI CON SCHERMO BASSO */
+
+    @media (max-height: 700px) {
+
+      .pagina {
+        padding-top: 22px;
+      }
+
+      .logo-img {
+        max-width: 270px;
+      }
+
+      .frase {
+        margin-top: 4px;
+        margin-bottom: 8px;
+      }
+
+      .link,
+      .link-disattivo {
+        height: 48px;
+        margin-bottom: 7px;
+      }
+    }
+
   </style>
 </head>
+
 
 <body>
 
   <main class="pagina">
 
+
+    <!-- LOGO -->
+
     <header class="logo">
+
       <img
         src="logo-simply.png"
         alt="Simply Estetica & Benessere di Sara La Scalea"
         class="logo-img"
       >
+
     </header>
+
+
+    <!-- FRASE -->
 
     <div class="frase">
       Il vostro benessere, semplicemente.
     </div>
 
 
+
     <!-- WHATSAPP -->
-<a
-  class="link"
-  href="https://wa.me/393349597886?text=Ciao%2C%20vorrei%20avere%20informazioni%20sui%20vostri%20servizi."
-  target="_blank"
-  rel="noopener"
->
 
-  <div class="icona">
-    <svg viewBox="0 0 24 24">
-      <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5z"/>
-      <path d="M8.5 8.5c.4 3 2 4.5 5 5.5"/>
-    </svg>
-  </div>
+    <a
+      class="link"
+      href="https://wa.me/393349597886?text=Ciao%2C%20vorrei%20avere%20informazioni%20sui%20vostri%20servizi."
+      target="_blank"
+      rel="noopener"
+    >
 
-  <div class="testo">
-    WhatsApp
-  </div>
+      <div class="icona">
 
-</a>
+        <svg viewBox="0 0 24 24">
+
+          <path
+            d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5z"
+          />
+
+          <path
+            d="M8.5 8.5c.4 3 2 4.5 5 5.5"
+          />
+
+        </svg>
+
+      </div>
+
+      <div class="testo">
+        WhatsApp
+      </div>
+
+    </a>
+
 
 
     <!-- FACEBOOK -->
+
     <a
       class="link"
       href="https://facebook.com/simplyestetica"
@@ -176,9 +302,15 @@
     >
 
       <div class="icona facebook">
+
         <svg viewBox="0 0 24 24">
-          <path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.7.3-1 1-1z"/>
+
+          <path
+            d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.7.3-1 1-1z"
+          />
+
         </svg>
+
       </div>
 
       <div class="testo">
@@ -188,15 +320,39 @@
     </a>
 
 
+
     <!-- INSTAGRAM -->
+
     <div class="link-disattivo">
 
       <div class="icona">
+
         <svg viewBox="0 0 24 24">
-          <rect x="3" y="3" width="18" height="18" rx="5"/>
-          <circle cx="12" cy="12" r="4"/>
-          <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+
+          <rect
+            x="3"
+            y="3"
+            width="18"
+            height="18"
+            rx="5"
+          />
+
+          <circle
+            cx="12"
+            cy="12"
+            r="4"
+          />
+
+          <circle
+            cx="17.5"
+            cy="6.5"
+            r="0.8"
+            fill="currentColor"
+            stroke="none"
+          />
+
         </svg>
+
       </div>
 
       <div class="testo">
@@ -206,48 +362,73 @@
     </div>
 
 
+
     <!-- LISTINO PREZZI -->
-<a
-  class="link"
-  href="listino.html"
->
 
-  <div class="icona">
-    <svg viewBox="0 0 24 24">
-      <path d="M3 13l10-10h7v7L10 20z"/>
-      <circle cx="17" cy="7" r="1"/>
-    </svg>
-  </div>
+    <a
+      class="link"
+      href="listino.html"
+    >
 
-  <div class="testo">
-    Listino Prezzi
-  </div>
+      <div class="icona">
 
-</a>
+        <svg viewBox="0 0 24 24">
+
+          <path
+            d="M3 13l10-10h7v7L10 20z"
+          />
+
+          <circle
+            cx="17"
+            cy="7"
+            r="1"
+          />
+
+        </svg>
+
+      </div>
+
+      <div class="testo">
+        Listino Prezzi
+      </div>
+
+    </a>
+
 
 
     <!-- DOVE SIAMO -->
-<a
-  class="link"
-  href="https://www.google.com/maps/search/?api=1&query=Via%20Fratelli%20Bandiera%2030%2C%2029015%20Castel%20San%20Giovanni%20PC"
-  target="_blank"
-  rel="noopener"
->
 
-  <div class="icona">
-    <svg viewBox="0 0 24 24">
-      <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"/>
-      <circle cx="12" cy="10" r="2.5"/>
-    </svg>
-  </div>
+    <a
+      class="link"
+      href="https://www.google.com/maps/search/?api=1&query=Via%20Fratelli%20Bandiera%2030%2C%2029015%20Castel%20San%20Giovanni%20PC"
+      target="_blank"
+      rel="noopener"
+    >
 
-  <div class="testo">
-    Dove siamo
-  </div>
+      <div class="icona">
 
-</a>
-    
-    </div>
+        <svg viewBox="0 0 24 24">
+
+          <path
+            d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"
+          />
+
+          <circle
+            cx="12"
+            cy="10"
+            r="2.5"
+          />
+
+        </svg>
+
+      </div>
+
+      <div class="testo">
+        Dove siamo
+      </div>
+
+    </a>
+
 
   </main>
 

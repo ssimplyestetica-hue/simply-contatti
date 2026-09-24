@@ -7,6 +7,7 @@
   <title>Simply Estetica & Benessere</title>
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -16,6 +17,9 @@
       margin: 0;
       padding: 0;
     }
+
+
+    /* SFONDO PAGINA */
 
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -32,26 +36,30 @@
 
       color: #333;
 
-      padding: 6px 14px 8px;
+      min-height: 100vh;
+      min-height: 100dvh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 18px 14px;
     }
 
 
-    /* CONTENITORE TORTORA */
+    /* BLOCCO TORTORA */
 
     .pagina {
       width: 100%;
       max-width: 420px;
 
-      margin: 0 auto;
-
       background: #ded5c8;
 
       border-radius: 190px 190px 0 0;
 
-      padding: 28px 20px 12px;
+      padding: 38px 22px 18px;
 
       height: auto;
-      min-height: 0;
     }
 
 
@@ -59,14 +67,14 @@
 
     .logo {
       text-align: center;
-      margin: 0 0 4px;
+      margin: 0 0 6px;
     }
 
     .logo-img {
       display: block;
 
       width: 100%;
-      max-width: 300px;
+      max-width: 315px;
 
       height: auto;
 
@@ -81,7 +89,7 @@
 
       font-size: 14px;
 
-      margin: 6px 0 10px;
+      margin: 10px 0 15px;
 
       color: #333;
     }
@@ -92,10 +100,9 @@
     .link,
     .link-disattivo {
       width: 100%;
+      height: 56px;
 
-      height: 52px;
-
-      margin-bottom: 8px;
+      margin-bottom: 15px;
 
       background: #eee8db;
 
@@ -115,6 +122,9 @@
       transition: 0.15s ease;
     }
 
+
+    /* EFFETTO PRESSIONE */
+
     .link:active {
       transform: scale(0.98);
       background: #e7e0d2;
@@ -124,8 +134,8 @@
     /* ICONE */
 
     .icona {
-      width: 52px;
-      min-width: 52px;
+      width: 54px;
+      min-width: 54px;
 
       height: 100%;
 
@@ -137,8 +147,8 @@
     }
 
     .icona svg {
-      width: 27px;
-      height: 27px;
+      width: 29px;
+      height: 29px;
 
       fill: none;
 
@@ -165,12 +175,14 @@
     }
 
 
+    /* PULSANTI NON ANCORA ATTIVI */
+
     .link-disattivo {
       cursor: default;
     }
 
 
-    /* FACEBOOK */
+    /* ICONA FACEBOOK */
 
     .facebook svg {
       fill: #879475;
@@ -178,55 +190,42 @@
     }
 
 
-    /* NIENTE SPAZIO DOPO L'ULTIMO PULSANTE */
+    /* TOGLIE LO SPAZIO DOPO DOVE SIAMO */
 
     .pagina > :last-child {
       margin-bottom: 0;
     }
 
 
-    /* TELEFONI PIÙ PICCOLI */
+    /* TELEFONI MOLTO STRETTI */
 
     @media (max-width: 380px) {
 
+      body {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
       .pagina {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 18px;
+        padding-right: 18px;
       }
 
       .logo-img {
-        max-width: 280px;
-      }
-
-      .link,
-      .link-disattivo {
-        height: 50px;
+        max-width: 295px;
       }
     }
 
 
-    /* TELEFONI CON SCHERMO BASSO */
+    /* TELEFONI CON POCA ALTEZZA:
+       permettiamo lo scorrimento invece di schiacciare tutto */
 
-    @media (max-height: 700px) {
+    @media (max-height: 650px) {
 
-      .pagina {
-        padding-top: 22px;
+      body {
+        align-items: flex-start;
       }
 
-      .logo-img {
-        max-width: 270px;
-      }
-
-      .frase {
-        margin-top: 4px;
-        margin-bottom: 8px;
-      }
-
-      .link,
-      .link-disattivo {
-        height: 48px;
-        margin-bottom: 7px;
-      }
     }
 
   </style>
